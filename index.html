@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Free ssm panel</title>
+</head>
+<body>
+    <header>
+        <h1><span><img style="width: 45px;margin-bottom: -10px;" src="./img/ssm.jpg"></span> Bytes & Cookies's free ssm panel</h1>
+    </header>
+    <section id="mainscreen" class="userscreen">
+        <h2>Select your service.</h2>
+        <article class="service_list">
+            <div class="service_card">
+                <h2><span class="material-symbols-outlined">person_add</span>Instagram followers</h2>
+                <h3>get free instagram follower on for your account</h3>
+                <button ac="loadscreen" screen="iguserinputname" class="service_selection">get followers</button>
+            </div>
+            <div class="service_card">
+                <!-- <h2><span class="material-symbols-outlined">person_add</span>Instagram views</h2> -->
+                <h3>more to come in the future</h3>
+                <!-- <button class="service_selection">get views</button> -->
+            </div>
+        </article>
+    </section>
+    <section id="loadingscreen" style="display: none;" class="userscreen">
+        <img src="./img/load.svg">
+    </section>
+    <section id="iguserinputname" style="display: none;" class="userscreen">
+        <form method="post">
+            <input type="text" name="igusername" placeholder="Type your instagram username here" id="iguname">
+            <button type="submit">Search</button>
+            <button ac="loadscreen" screen="mainscreen">Go back</button>
+        </form>
+    </section>
+    <section id="iguserconfirmation" style="display: none;" class="userscreen">
+        <h2>Confirm its you</h2>
+        <h3>@username ID: 12345</h3>
+        <img src="./img/default.jpg" style="width: 150px;" alt="">
+        <div class="confirmationbutton">
+            <button ac="sendstuff">Yes send to this account</button>
+            <button ac="loadscreen" screen="mainscreen">Go back</button>
+        </div>
+    </section>
+    <section id="igusersuccess" style="display: none;" class="userscreen">
+        <h1>Success !</h1>
+        <h3>25 follower has been sent to @username</h3>
+        <i>You will be redirected in the main menu in 5 second...</i>
+    </section>
+
+    <h4>Copyright Bytes & Cookies © 2022</h4>
+    <h6>Made with ♥️ for you</h6>
+</body>
+</html>
+<script src="./js/app.js"></script>
